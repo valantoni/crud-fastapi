@@ -19,7 +19,7 @@ This is a simple CRUD (Create, Read, Update, Delete) application built using Fas
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/crud-fastapi.git
+    git clone https://github.com/valantoni/crud-fastapi.git
     cd crud-fastapi
     ```
 
