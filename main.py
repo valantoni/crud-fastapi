@@ -3,8 +3,13 @@ from sqlalchemy.orm import Session
 from database import get_db
 from app.schema import InvoiceCreate, InvoiceUpdate, InvoiceResponse
 from app import crud
+from database import engine, Base
 
 app = FastAPI()
+
+
+# Crear las tablas si no existen (solo para desarrollo)
+Base.metadata.create_all(bind=engine)
 
 @app.get("/")
 def root():
